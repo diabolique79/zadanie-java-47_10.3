@@ -27,15 +27,8 @@ int z= 0;
 
         Metody.sum(products);
         System.out.println(Metody.sum(products));
-        Metody.max(products);
+        System.out.println(Metody.max(products));
 
-
-//        FileInputStream fis = new FileInputStream("produkty.csv");
-//        ObjectInputStream ois = new ObjectInputStream(fis);
-//        //Object readObject = ois.readObject();
-//        Product product = (Product) ois.readObject();
-//        System.out.println(product);
-//        ois.close();
 
 
     }

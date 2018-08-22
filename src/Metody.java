@@ -1,6 +1,10 @@
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+
 public class Metody {
 
-    public static double sum (Product[] products){
+    public static double sum(Product[] products) {
 
         double sum = 0;
         for (int i = 0; i < products.length; i++) {
@@ -13,19 +17,21 @@ public class Metody {
 
     }
 
-public static void max(Product [] products){
+    public static double max(Product[] products) {
 
         int wynik = 0;
-    for (int i = 1; i < products.length; i++) {
+        for (int i = 1; i < products.length; i++) {
 
-        if (products[i].getPrice() > products[wynik].getPrice()){
-            wynik = i;
+            if (products[i].getPrice() > products[wynik].getPrice()) {
+                wynik = i;
 
+            }
         }
+
+        return products[wynik].getPrice();
     }
 
-    System.out.println(products[wynik].getPrice());
-
 
 }
-}
+
+
